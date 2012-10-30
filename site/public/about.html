@@ -11,8 +11,10 @@
     <!-- <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/css/bootstrap-combined.min.css" rel="stylesheet"> -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <style type="text/css">
+      .well {background-color: white;}
       body {
-        background-image: url("assets/img/grid.png");
+        /*background-image: url("assets/img/grid.png");*/
+        background-image: url("assets/img/straws.png");
         padding-top: 60px;
         padding-bottom: 40px;
       }
@@ -30,6 +32,20 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"> -->
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-35886363-1']);
+      _gaq.push(['_setDomainName', 'franciscocaraballo.com']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
   </head>
 
   <body>
@@ -68,11 +84,13 @@
 
     <div class="container">
         
-<div class="row">
+<div class="row well" style="margin-left: 0px;">
     <div class="span10 offset1">
         <h4>
-            These are the hats i've worn at some time or another (not all them have fit very well): Consultant, Scientist, Programmer, Engineer, Researcher, Developer.
-        </h4>
+        These are the hats i've worn at some time or another <small>(not all them have fit very well)</small>:<br></h4>
+        <h3>Consultant, Scientist, Programmer, Engineer, Researcher, Developer.</h3>
+
+        <br>
         Up until 2010 I worked as a Business Intelligence Consultant. Since then I've taken a detour in my career to pursue other interests:
         <ul>
             <li>
@@ -87,90 +105,132 @@
         </ul>
     </div>
 </div>
-<h3>Things I'm proficient with:</h3>
-<div class="row">
-    <div class="span5">
 
-        <ul>
-            <li>
-                Programming/Markup Languages:
-                <ul>
-                    <li>Python</li>
-                    <li>C++</li>
-                    <li>Java</li>
-                    <li>ABAP</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>SQL</li>
-                </ul>
-            </li>
-            <li>
-                Frameworks:
-                <ul>
-                    <li>Kitware's Visualization Toolkit - VTK</li>
-                    <li>Django</li>
-                    <li>SAP NetWeaver</li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-    <div class="span5 offset1">
-        <ul>
-            <li>
-                Tools:
-                <ul>
-                    <li>Git</li>
-                    <li>Image Processing Software (i.e. Gimp)</li>
-                </ul>
-            </li>
-            <li>
-                Environments:
-                <ul>
-                    <li>*NIX</li>
-                    <li>Windows</li>
-                </ul>
-            </li>
-        </ul>
+<div class="row well" style="margin-left: 0px;">
+    <div class="span10 offset1">
+        <div class="accordion well" id="accordion2" style="padding: 0px;">
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                <h4>Things I'm proficient with</h4>
+              </a>
+            </div>
+            <div id="collapseOne" class="accordion-body collapse">
+              <div class="accordion-inner">
+
+                <div class="row">
+                    <div class="span4">
+
+                        <ul>
+                            <li>
+                                Programming/Markup Languages:
+                                <ul>
+                                    <li>Python</li>
+                                    <li>C++</li>
+                                    <li>Java</li>
+                                    <li>ABAP</li>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>SQL</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Frameworks:
+                                <ul>
+                                    <li>Kitware's Visualization Toolkit - VTK</li>
+                                    <li>Django</li>
+                                    <li>SAP NetWeaver</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="span4 offset1">
+                        <ul>
+                            <li>
+                                Tools:
+                                <ul>
+                                    <li>Git</li>
+                                    <li>Image Processing Software (i.e. Gimp)</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Environments:
+                                <ul>
+                                    <li>*NIX</li>
+                                    <li>Windows</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                <h4>Education & Job History</h4>
+              </a>
+            </div>
+            <div id="collapseTwo" class="accordion-body collapse">
+              <div class="accordion-inner">
+                <div class="row">
+                    <div class="span4">
+                        Education:
+                        <ul>
+                            <li>
+                                Master in Artificial Intelligence. <br>
+                                Universidad Politécnica de Madrid (UPM) <br>
+                                <em>2012 - Madrid</em>
+
+                            </li>
+                            <li>
+                                Master in Business Administration. <br>
+                                ESEUNE <br>
+                                <em>2011 - Bilbao/Beijing</em>
+
+                            </li>
+                            <li>
+                                Computer Engineer.<br>
+                                Universidad Simon Bolívar (USB) <br>
+                                <em>2005 - Caracas</em>
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="span4 offset1">
+                        Job History:
+                        <ul>
+                            <li>
+                                Freelance.
+                                <em>2 Years.</em>
+                                <ul>
+                                    <li>SAP Business Intelligence Consultant</li>
+                                </ul>
+                            </li>
+                            <li>
+                                IBM.
+                                <em>4 years.</em>
+                                <ul>
+                                    <li>SAP Business Intelligence Consultant</li>
+                                    <li>SAP Netweaver. Java WebDynpro developer.</li>
+                                    <li>SAP Controlling Consultant</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
 </div>
-<div class="row">
-    <div class="span5">
-        <h3>Education:</h3>
-        <ul>
-            <li>
-                Master in Artificial Intelligence. <em>2012 - Madrid</em>
-            </li>
-            <li>
-                Master in Business Administration. <em>2011 - Bilbao/Beijing</em>
-            </li>
-            <li>
-                Computer Engineer.
-                <em>2005 - Caracas</em>
-            </li>
-        </ul>
-    </div>
-    <div class="span5 offset1">
-        <h3>Job History:</h3>
-        <ul>
-            <li>
-                Freelance.
-                <em>2 Years.</em>
-                <ul>
-                    <li>SAP Business Intelligence Consultant</li>
-                </ul>
-            </li>
-            <li>
-                IBM.
-                <em>4 years.</em>
-                <ul>
-                    <li>SAP Business Intelligence Consultant</li>
-                    <li>SAP Netweaver. Java WebDynpro developer.</li>
-                    <li>SAP Controlling Consultant</li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-</div>
+
+
+
+
+
 
       <!-- Main hero unit for a primary marketing message or call to action -->
       <hr>
@@ -194,7 +254,6 @@
             $('.nav').find('.active').removeClass('active');
             $('.nav li a').each(function () {
                 if (this.href.indexOf(urlaspx) >= 0) {
-                    debugger;
                     $(this).parent().addClass('active');
                 }
             });

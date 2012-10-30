@@ -1,9 +1,10 @@
+# -*- coding: utf-8 -*-
 from jinja2 import Environment, FileSystemLoader
 
 
 def write_file(filename, rendered_template):
     f = open("site/public/" + filename, 'w')
-    f.write(rendered_template + '\n')
+    f.write((rendered_template + u'\n').encode('utf-8'))
     f.close()
 
 env = Environment(loader=FileSystemLoader('templates/'))
