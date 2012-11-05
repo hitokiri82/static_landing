@@ -15,6 +15,9 @@ env = Environment(loader=FileSystemLoader('templates/'))
 #     write_file(of, env.get_template(template).render())
 
 for template in env.list_templates():
+    if template.startswith('base_templates'):
+        continue
+    print "processing: " + template
     write_file(template.replace('.templ', '.html'), env.get_template(template).render())
 
 #[write_file(filename, env.get_template(template).render()) for filename, template in [output_files, env.list_templates()]]
